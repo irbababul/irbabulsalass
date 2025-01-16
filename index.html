@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Pembuatan Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+</head>
+<body id="onTop">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="logo.png" alt="logo" title="Salas" width="36" height="36"></a>
+            <button class="navbar-toggler border-0 pr-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <img src="img/burger-expand-3.webp" alt="option" title="Expand Navigation" width="26"></span> -->
+                <div class="nav-menu" onclick="openNavMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto navbarLinks">
+                    <a class="nav-item nav-link mx-2" href="#about" data-toggle="collapse" data-target=".navbar-collapse.show">Tentang saya</a>
+                    <a class="nav-item nav-link mx-2" href="#services" data-toggle="collapse" data-target=".navbar-collapse.show">Skills</a>
+                    <a class="nav-item nav-link mx-2" href="#portfolio" data-toggle="collapse" data-target=".navbar-collapse.show">Sosmed</a>
+                    <a class="nav-item nav-link mx-2" href="#sosmed" data-toggle="collapse" data-target=".navbar-collapse.show">Project</a>
+                </div>
+                <a class="nav-item nav-link mx-2" href="https://wa.me/085785351741" data-toggle="collapse" data-target=".navbar-collapse.show"><i class="fas fa-paper-plane mr-2"></i>Contact me!</a>
+                <button class="btnChangeTheme btn btn-outline-dark btn-sm border-0 ml-3 shadow-none d-block mx-auto mx-lg-0 nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <i class="far fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- End of static navbar -->
+
+    <!-- Go top button -->
+    <div class="row">
+        <div class="col">
+            <a class="goTop btn btn-secondary fixed-bottom mr-3 mb-3 ml-auto border-0 d-none" href="#onTop"
+                style="width: 50px; height: 50px;">
+                <i class="fas fa-chevron-up h4 pt-2"></i>
+            </a>
+        </div>
+    </div>
+    <!-- End of go top button -->
+
+    <!-- Jumbotron section -->
+    <div id="jumbotron" class="container">
+        <div class="row">
+            
+            <div class="col-md-4 text-center order-md-2">
+                <img class="jumbotronImg shadow-lg bg-white" height="380" src="aku1.jpeg" alt="salas">
+            </div>
+            
+            <div class="col-md-6 offset-lg-1 jumbotronTitle">
+                <small class="mb-0">Hello, my name is</small>
+                <h1>Irbabul Salas</h1>
+                <p class="mb-2 font-weight-lighter">Irbabul Salas | @m_irbblsalas</p>
+                    <a href="https://wa.me/085785351741" class="h4 mx-1 text-secondary" title="Behance"><i class="fab fa-whatsapp"></i></a>    
+                    <a href="https://github.com/irbababul" class="h4 mx-1 text-secondary" title="Github"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/m_irbblsalas" class="h4 mx-1 text-secondary" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/085785351741" class="h4 mx-1 text-secondary" title="Behance"><i class="fab fa-linked"></i></a>
+                <br>
+                <a href="#about" class="btn btn-dark nav-item mt-4 py-2">About me</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of jumbotron section -->
+
+
+    <header class="m-2 p-2 rounded">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active rounded" style="background-image: url('aku1.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4"></h2>
+                <p class="lead">Foto yearbook.</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item rounded" style="background-image: url('aku.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4"></h2>
+                <p class="lead">Foto ijazah.</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item rounded" style="background-image: url('kelas.jpeg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4"></h2>
+                <p class="lead">Foto Sekelas.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+      </header>
+    <div class="container mt-5">
+        <section id="about" class="highlight-section text-center">
+            <h2 class="mb-4">Tentang<span class="saya">saya</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-justify">Saya adalah seorang yang bercita cita ingin sukses, salah satu cita cita saya adalah menjadi seorang network engingeering, saya sudah merencanakan sesuatu untuk menjadi network engingeering salah satu rencana saya adalaha saya habis kelas 12 saya akan melanjutkan ke politeknik elektronika negri surabaya dan akan bekerja di pt telkom ataua lintasarta</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="cita.jpg" alt="Tentang Kami" class="img-fluid rounded mt-3">
+                </div>
+            </div>
+        </section>
+        <section id="services" class="highlight-section mt-5">
+            <h2>My Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">python, mathlab</li>
+                        <li class="list-group-item">frontend(html, css, javascript)</li>
+                        <li class="list-group-item">backend(mysql,php)</li>
+                        <li class="list-group-item">hosting(github,varcel)</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="skill.png" alt="Layanan Kami" class="img-fluid rounded mt-3">
+                    <img src="skill.png" alt="Layanan Kami" class="img-fluid rounded mt-3 ml-4">
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="mt-5 highlight-section">
+            <h2>sosmed saya</h2>
+            <p>ini adalah sosmed saya silahkan  klik kunjungi untuk menghubungi saya</p>
+            <div class="row justify-content-center m-1">
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="github.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Akun github saya</h5>
+                        <a href="https://github.com/irbababul/" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="wa.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">WhatsApp</h5>
+                        <a  href="https://wa.me/085785351741" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="ig.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Instragam</h5>
+                        <a  href="https://www.instagram.com/m_irbblsalas" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sosmed" class="mt-5 highlight-section">
+            <h2>project saya</h2>
+            <p>ini adalah web pertama saya saat sudah bisa html dan css.</p>
+            <div class="row justify-content-center m-1">
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="pj1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">First My project</h5>
+                        <a href="https://irbababul.github.io/webkesatusaya/" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="pj2.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Second My project</h5>
+                        <a href="https://irbababul.github.io/irbblsalas-web/" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card m-2" style="width: 100%;">
+                        <img class="card-img-top" src="pj3.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Thrird My project</h5>
+                        <a href="https://irbababul.github.io/webirbabulsalas/" class="btn btn-primary">kunjungi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="mt-5 highlight-section">
+            <h2>Hubungi saya</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea class="form-control" id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="pt-5 myFooter" style="margin-top: 140px;">
+        <div class="container">
+            <div class="row pb-3">
+                <div class="col-md-6 mb-3">
+                    <h6 class="mb-2">Contributions</h6>
+                    <ul>
+                        <li><a class="small d-block" href="https://github.com/irbababul">Saya Sendiri</a></li>
+                        <li><a class="small d-block" href="https://github.com/irbababul">kegiatan madrasah yaitu program ketrampilan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h6 class="mb-2">This template</h6>
+                    <ul>
+                        <li><a class="small d-block" href="https://github.com/irbababul/">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-3 border-top border-light">
+                <div class="col-md-6 text-center text-md-left pb-3">
+                    <small class="mr-2">© 2025. Made with ❤ By Irbabul Salas</small>
+                </div>
+                <div class="col-md-6 text-center text-md-right pb-3">
+                    
+                        <a href="https://wa.me/085785351741" class="h4 mx-1 text-secondary" title="LinkedIn"><i class="fab fa-linkedin"></i></a>    
+                    
+                        <a href="https://github.com/Irbabul" class="h4 mx-1 text-secondary" title="Github"><i class="fab fa-github"></i></a>    
+                    
+                        <a href="https://instagram.com/m_irbblsalas" class="h4 mx-1 text-secondary" title="Instagram"><i class="fab fa-instagram"></i></a>    
+                    
+                        <a href="https://wa.me/085785351741" class="h4 mx-1 text-secondary" title="Behance"><i class="fab fa-whatsapp"></i></a>    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
